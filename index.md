@@ -202,11 +202,13 @@ The same case as previous but implemented using a different string/
 ```
 Input -
 
-grep 'bye' -rin written_2
+find -size +200k
 
 Output -
 
-written_2/non-fiction/OUP/Castro/chN.txt:32:Good-bye my Lady
+./travel_guides/berlitz1/WhereToFrance.txt
+./travel_guides/berlitz1/WhereToItaly.txt
+./travel_guides/berlitz2/Canada-WhereToGo.txt
 
 ```
 
@@ -217,14 +219,20 @@ This commands adds the speific line number on which the word is found on top of 
 ```
 Input - 
 
-grep 'Hello' -rlin written_2
+find -size +100k
 
 Output - 
 
-written_2/non-fiction/OUP/Berk/CH4.txt
-written_2/travel_guides/berlitz1/WhereToItaly.txt
-written_2/travel_guides/berlitz1/WhereToFrance.txt
-written_2/travel_guides/berlitz1/WhereToHongKong.txt
+./non-fiction/OUP/Berk/CH4.txt
+./non-fiction/OUP/Berk/ch2.txt
+./travel_guides/berlitz1/WhereToFrance.txt
+./travel_guides/berlitz1/WhereToIndia.txt
+./travel_guides/berlitz1/WhereToItaly.txt
+./travel_guides/berlitz1/WhereToJapan.txt
+./travel_guides/berlitz1/WhereToMalaysia.txt
+./travel_guides/berlitz2/Canada-WhereToGo.txt
+./travel_guides/berlitz2/China-WhereToGo.txt
+./travel_guides/berlitz2/Portugal-WhereToGo.txt
 
 ```
 
