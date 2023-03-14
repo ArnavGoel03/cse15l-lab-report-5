@@ -4,12 +4,14 @@ This lab report is mostly focussing on the fun modifications that can be used wi
 
 Before Using these commands I switched the working directory to an inner directory to make the work of using the 'find' command easier. It can be done using the following commands after cloning the docsearch directory provided by the instructor. The steps are provided with the assumption that a successfull connection with remote server has already been established.
 
+
 ```
 
 cd docsearch
 cd written_2/  
 
 ```
+
 
 
 ### 1). -name: 
@@ -20,6 +22,7 @@ cd written_2/
 
 
 ##### Example 1 - Prompt with output 
+
 ```
 Input - 
 
@@ -30,10 +33,13 @@ Output -
 ./travel_guides/berlitz2/Nepal-History.txt
 
 ```
-This basically fetches all the lines while looking for all the files in the directory recursively. It printed out the file names along with specific lines that had them.
+
+This input looks for a file with a specific name "Nepal-History.txt" which is in the format of a text file. The file's relative path is returned by the command.
+
 
 
 ##### Example 2 - Prompt with output 
+
 ```
 Input -
 
@@ -83,8 +89,7 @@ Output -
 ./non-fiction/OUP/Rybczynski/ch3.txt
 
 ```
-This is essentially the same thing as the last set of commands just with the difference of the string being searched for.
-
+In this example, instead of the tradition search with the complete file name we look for a pattern in the file name. The '?' in the name can be replaced by any any character to find a match withing the directories and the sub-directories. The matched file names with relative paths are then returned.
 
 
 
@@ -96,6 +101,7 @@ This is essentially the same thing as the last set of commands just with the dif
 
 
 ##### Example 1 - Prompt with output 
+
 ```
 Input -
 
@@ -117,11 +123,12 @@ Output -
 ./travel_guides/berlitz2
 
 ```
+This command specifically looks for files of type "Directory" within the current working directory. The directories with their relative paths are returned.
 
-This examples builds up on what we learnt about -r in the last section for ease in exploring all the files. It also inclused the '-l' which just prints the file name whilst leaving out the line content which has this string.
 
 
 ##### Example 2 - Prompt with output 
+
 ```
 Input - 
 
@@ -140,8 +147,7 @@ Output -
 ./non-fiction/OUP/Abernathy/ch9.txt
 
 ```
-
-Similar to the last case we came across just with a different string 'bye' .
+For this prompt, I provided a directory for the find fucntion to look in as there were way too many files in the current working directory. '-type f' present in the command reinforces the command to only look for text files within the given directory. The relative paths of the text files are then returned.
 
 
 
@@ -153,20 +159,33 @@ Similar to the last case we came across just with a different string 'bye' .
 #### Examples -
 
 ##### Example 1 - Prompt with output 
+
 ```
 Input - 
 
-find ./non-fiction/OUP/Abernathy -mtime -1 -type d
+find -mtime -1 -type d
 
 Output -
 
+.
+./non-fiction
+./non-fiction/OUP
 ./non-fiction/OUP/Abernathy
+./non-fiction/OUP/Berk
+./non-fiction/OUP/Castro
+./non-fiction/OUP/Fletcher
+./non-fiction/OUP/Kauffman
+./non-fiction/OUP/Rybczynski
+./travel_guides
+./travel_guides/berlitz1
+./travel_guides/berlitz2
 
 ```
-It's the same command used in the first examples of the two alterations we explored above but with another modification '-i'. This makes the search case insentive and helps us focus on the word rather than the specifc formatting of it and we end up matching with more of the files/
+This command looks for directories that have been modified in the past 1 day. Since the docsearch directory was just cloned from its source on github, all the directories were newly modified and hence returned with their relative paths. The '.' in the output represents the current working directory.
 
 
 ##### Example 2 - Prompt with output 
+
 ```
 Input - 
 
@@ -187,7 +206,7 @@ Output -
 
 ```
 
-The same case as previous but implemented using a different string/
+This command looks for files that have been modified in the past 7 days. Since the main docsearch directory was just cloned (and hence modified) from its source on github, all the files within the specified search directory 'Abernathy' were returned with their relative paths.
 
 
 
@@ -199,6 +218,7 @@ The same case as previous but implemented using a different string/
 #### Examples -
 
 ##### Example 1 - Prompt with output 
+
 ```
 Input -
 
@@ -211,11 +231,13 @@ Output -
 ./travel_guides/berlitz2/Canada-WhereToGo.txt
 
 ```
+This command looks for files that take up more than 200 kilobytes of disk space. The same command '-size' can be used with M to search for file sizes in terms of Megabytes instead of Kilobytes. Since the directory does not have a file that big, I did not try to use that in an example as it would have given a blank output.
 
-This commands adds the speific line number on which the word is found on top of the text from the line. The same can be seen in this example as the line number 32 is printed in the output.
+
 
 
 ##### Example 2 - Prompt with output 
+
 ```
 Input - 
 
@@ -236,8 +258,7 @@ Output -
 
 ```
 
-Note - This command can't be paired up with '-l' as '-l' excludes the line altogther making the concept of outputting line numbers and thus using '-n' redundant & useless. This can be clearly concluded from the example above.
-
+This command looks for files that take up more than 100 kilobytes of disk space.
 
 
 
