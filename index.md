@@ -1,8 +1,8 @@
-# Interesting commands to pair up with 'grep'
+# Interesting commands to pair up with 'find'
 
 
 
-### -r: 
+### -name: 
 - This option tells grep to search recursively through all subdirectories, rather than just the current directory. Using the -r option can also make the search process more efficient, as it eliminates the need to run multiple grep commands and manually specify the directories to search. This can save time and effort, especially when searching large directory structures.
 
 
@@ -41,7 +41,7 @@ This is essentially the same thing as the last set of commands just with the dif
 
 
 
-### -l: 
+### -type: 
 - The '-l' option is used with the grep command to list only the names of files that contain a match for the specified pattern, rather than displaying the matching lines themselves. This can be useful when searching through multiple files and you only want to see which files contain the pattern, without having to sift through all of the matching lines within each file.
 
 #### Examples -
@@ -80,7 +80,7 @@ Similar to the last case we came across just with a different string 'bye' .
 
 
 
-### -i: 
+### -mtime: 
 - This option makes the grep search case-insensitive, so that uppercase and lowercase letters are treated as the same.By using the -I option, we can tell grep to ignore binary files and only search text files. This can be useful in cases where you only want to search for information in plain text files and don't want to see the results of searching binary files.
 
 
@@ -121,7 +121,7 @@ The same case as previous but implemented using a different string/
 
 
 
-### -n: 
+### -size: 
 - The '-n' option is used with the grep command to display the line numbers of the matching lines in the output. When this option is used, grep prefixes each matching line with its line number in the file, making it easier to locate the specific line(s) of interest. This option can be especially useful when searching through large files, where it can be difficult to manually find the matching line without the line number information.
 
 
