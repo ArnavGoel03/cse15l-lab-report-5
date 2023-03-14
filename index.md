@@ -3,7 +3,7 @@
 
 
 ### -name: 
-- This option tells grep to search recursively through all subdirectories, rather than just the current directory. Using the -r option can also make the search process more efficient, as it eliminates the need to run multiple grep commands and manually specify the directories to search. This can save time and effort, especially when searching large directory structures.
+- The -name option in the find command is used to search for files by their name. It can be used to search for specific files, files with a certain extension, or files that match a certain pattern. This makes it a powerful tool for locating files on a Unix or Linux system.
 
 
 #### Examples -
@@ -42,7 +42,8 @@ This is essentially the same thing as the last set of commands just with the dif
 
 
 ### -type: 
-- The '-l' option is used with the grep command to list only the names of files that contain a match for the specified pattern, rather than displaying the matching lines themselves. This can be useful when searching through multiple files and you only want to see which files contain the pattern, without having to sift through all of the matching lines within each file.
+- The -type option in the find command is used to search for files based on their type. This option takes a single character argument and matches it against the type of each file in the directory tree being searched. The matched files are then returned as the output of the find command. It can be used to find all directories, all regular files, or all symbolic links, for example.
+
 
 #### Examples -
 
@@ -81,7 +82,7 @@ Similar to the last case we came across just with a different string 'bye' .
 
 
 ### -mtime: 
-- This option makes the grep search case-insensitive, so that uppercase and lowercase letters are treated as the same.By using the -I option, we can tell grep to ignore binary files and only search text files. This can be useful in cases where you only want to search for information in plain text files and don't want to see the results of searching binary files.
+- The -mtime option in the find command is used to search for files based on their modification time. It can be used to find all files modified within a certain timeframe, such as within the last day or week. This option takes a numeric argument that specifies the number of 24-hour periods (or days) ago the file was last modified. The matched files are then returned as the output of the 'find' command.
 
 
 #### Examples -
@@ -122,8 +123,7 @@ The same case as previous but implemented using a different string/
 
 
 ### -size: 
-- The '-n' option is used with the grep command to display the line numbers of the matching lines in the output. When this option is used, grep prefixes each matching line with its line number in the file, making it easier to locate the specific line(s) of interest. This option can be especially useful when searching through large files, where it can be difficult to manually find the matching line without the line number information.
-
+- The -size option is useful in situations where you want to search for files based on their size. It can be used to find files that are taking up a lot of disk space, or files that are smaller than a certain size. This option takes a numeric argument and matches it against the size of each file in the directory tree being searched. 
 
 #### Examples -
 
