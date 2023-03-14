@@ -168,7 +168,7 @@ Note - This command can't be paired up with '-l' as '-l' excludes the line altog
 ## Softwares used - Chat GPT
 
 
-- I used ChatGPT for aiding me in the completion of this project. I prompted it with four commands specifically-  One for asking about 4 commands that could be paired up with the grep function and the rest of them for the usefullness of those functions. The same can be recreated by following these steps 
+- I used ChatGPT for aiding me in the completion of this project. I prompted it with four commands specifically-  One for asking about 4 commands that could be paired up with the 'find' function and the rest of them for the usefullness of those functions. The same can be recreated by following these given steps ~
 
 
 
@@ -182,19 +182,19 @@ The website upon clicking at first would look something like this ~
 
 2). Upon succesfull login inot your account the webpage would look something like this. Click on the new Chat button to proceed.
 
-![A picture of the base page of Chat GPT](chatgpt2.png)
+![A picture of the base page of Chat GPT](report5ss2.png)
 
 
 
-3).Enter the derised prompt( Instructions) for the Chat gpt to generate text and then hit enter or the arror button on the right of the text box.
+3).Enter the derised prompt (Instructions) for the Chat gpt to generate text and then hit enter or the arror button on the right of the text box.
 
-![A picture of the base page of Chat GPT](chatgpt3.png)
+![A picture of the base page of Chat GPT](report5ss3.png)
 
 
 
 4). A sample input and output has been attached underneath. 
 
-![A picture of the base page of Chat GPT](chatgpt4.png)
+![A picture of the base page of Chat GPT](report5ss4.png)
 
 
 
