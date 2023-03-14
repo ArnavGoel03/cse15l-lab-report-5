@@ -2,7 +2,7 @@
 
 This lab report is mostly focussing on the fun modifications that can be used with the 'find' function on the command line to boost our productivity and pace. I chose this task primarily because it helps me increase my knowledge about these commands which I otherwise wouldn't explore. I also lowkey loves the lab-report 3 which made me biased towards selecting this.
 
-Before Using these commands I switched the working directory to an inner directory to make the work of using the 'find' command easier. It can be done using the following commands after cloning the docsearch directory provided by the instructor. The steps are provided with the assumption that a successfull connection with remote server has already been established.
+Before Using these commands I switched the working directory to an inner directory to make the work of using the 'find' command easier. It can be done using the following commands after cloning the docsearch directory provided by the instructor. The steps are provided with the assumption that a successful connection with the remote server has already been established.
 
 
 ```
