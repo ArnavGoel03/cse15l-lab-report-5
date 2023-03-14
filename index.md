@@ -1,5 +1,6 @@
 # Interesting commands to pair up with 'find'
 
+This lab report is mostly focussing on the fun modifications that can be used with the 'find' function on the command line to boost our productivity and pace. I chose this task primarily because it helps me increase my knowledge about these commands which I otherwise wouldn't explore. I also lowkey loves the lab-report 3 which made me biased towards selecting this.
 
 
 ### -name: 
